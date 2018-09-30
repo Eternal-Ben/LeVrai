@@ -1,0 +1,25 @@
+﻿@* une sorte de using*@
+@model LeVrai.Models.Info
+    @{
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title> About </title>
+    </head>
+    <body>
+        <div>
+            <span>@ViewData["InfoPax"]</span>
+            <hr />
+            <span>@Model.Name</span>
+            <hr />
+            <span>@Model.LastName</span>
+            <hr />
+            <span>@Model.DateOfCreation</span>
+        </div>
+    </body>
+</html>
